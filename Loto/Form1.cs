@@ -78,5 +78,20 @@ namespace Loto
                         break;
                 }
             }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            {
+                int[] listic = { 5, 7, 12, 26, 29, 33 };
+                int pogodeni = 0;
+                for (int i = 0; i < listic.Length; i++)
+                {
+                    if (izvuceni.Contains(listic[i]))
+                        pogodeni++;
+                }
+                textBox8.Text = pogodeni.ToString() + "/6";
+
+            }
         }
+    }
 }
