@@ -133,11 +133,12 @@
             // textBox8
             // 
             this.textBox8.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox8.Location = new System.Drawing.Point(514, 353);
-            this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(70, 60);
+            this.textBox8.Size = new System.Drawing.Size(70, 44);
             this.textBox8.TabIndex = 8;
+            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button2
             // 
@@ -155,6 +156,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(800, 487);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox8);
@@ -167,7 +169,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Loto";
             this.ResumeLayout(false);
             this.PerformLayout();
 
