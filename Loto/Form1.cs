@@ -21,7 +21,7 @@ namespace Loto
                 InitializeComponent();
             }
 
-                        private int Izvuci(ref HashSet<int> izvuceni)
+            private int Izvuci(ref HashSet<int> izvuceni)
             {
                 int broj = rand.Next(1, 37);
                 while (izvuceni.Contains(broj))
@@ -30,7 +30,7 @@ namespace Loto
                 }
                 izvuceni.Add(broj);
             return broj;
-        }
+            }
             private void button1_Click(object sender, EventArgs e)
             {
                 klik++;
