@@ -21,60 +21,38 @@ namespace Loto
                 InitializeComponent();
             }
 
+                        private int Izvuci(ref HashSet<int> izvuceni)
+            {
+                int broj = rand.Next(1, 37);
+                while (izvuceni.Contains(broj))
+                {
+                    broj = rand.Next(1, 37);
+                }
+                izvuceni.Add(broj);
+            return broj;
+        }
             private void button1_Click(object sender, EventArgs e)
             {
                 klik++;
                 switch (klik)
                 {
                     case 1:
-                        int prvi = rand.Next(1, 37);
-                        textBox1.Text = prvi.ToString();
-                        izvuceni.Add(prvi);
+                        textBox1.Text = Izvuci(ref izvuceni).ToString();
                         break;
                     case 2:
-                        int drugi = rand.Next(1, 37);
-                        while (izvuceni.Contains(drugi))
-                        {
-                            drugi = rand.Next(1, 37);
-                        }
-                        textBox2.Text = drugi.ToString();
-                        izvuceni.Add(drugi);
+                        textBox2.Text = Izvuci(ref izvuceni).ToString();
                         break;
                     case 3:
-                        int treci = rand.Next(1, 37);
-                        while (izvuceni.Contains(treci))
-                        {
-                            treci = rand.Next(1, 37);
-                        }
-                        textBox3.Text = treci.ToString();
-                        izvuceni.Add(treci);
+                        textBox3.Text = Izvuci(ref izvuceni).ToString();
                         break;
                     case 4:
-                        int cetvrti = rand.Next(1, 37);
-                        while (izvuceni.Contains(cetvrti))
-                        {
-                            cetvrti = rand.Next(1, 37);
-                        }
-                        textBox4.Text = cetvrti.ToString();
-                        izvuceni.Add(cetvrti);
+                        textBox4.Text = Izvuci(ref izvuceni).ToString();
                         break;
                     case 5:
-                        int peti = rand.Next(1, 37);
-                        while (izvuceni.Contains(peti))
-                        {
-                            peti = rand.Next(1, 37);
-                        }
-                        textBox5.Text = peti.ToString();
-                        izvuceni.Add(peti);
+                        textBox5.Text = Izvuci(ref izvuceni).ToString();
                         break;
                     case 6:
-                        int sesti = rand.Next(1, 37);
-                        while (izvuceni.Contains(sesti))
-                        {
-                            sesti = rand.Next(1, 37);
-                        }
-                        textBox6.Text = sesti.ToString();
-                        izvuceni.Add(sesti);
+                        textBox6.Text = Izvuci(ref izvuceni).ToString();
                         break;
                 }
             }
